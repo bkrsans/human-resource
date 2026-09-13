@@ -1,0 +1,32 @@
+{
+  "name": "project-combination-engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "build": "vite build && tsup server/index.ts --format esm --platform node --out-dir dist-server --clean",
+    "start": "node dist-server/index.js",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "express": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "jsdom": "latest",
+    "tsx": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
